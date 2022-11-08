@@ -14,12 +14,14 @@ int main(){
     }
 }
 
-// #1. Algorithm for array traversal 
-// Arr[] - array varible 
-// N - total number of element 
-// step 1 Initialize var I=0
-// step 2 while(I<N) Repeat
-// step 3 print (Arr[I])
-// step 4 set I = I + 1
-// step 5 end while // repeat step 2 to 5 until condition become false.
-// step 6 Return
+/* 
+#1. Algorithm for array traversal 
+Arr[] - array varible 
+N - total number of element 
+step 1 Initialize var I=0
+step 2 while(I<N) Repeat
+step 3 print (Arr[I])
+step 4 set I = I + 1
+step 5 end while // repeat step 2 to 5 until condition become false.
+step 6 Return
+*/
