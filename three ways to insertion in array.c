@@ -1,3 +1,4 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
 /*
 three ways to insertion in array:- 1) Insert in beginning 
                                    2) insert at the end of array
@@ -76,25 +77,27 @@ step 3 return
 -----------------------------------------------------------------------------------------------------------------------------------------
 // 3) insert new element at given position  
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+#include <stdio.h>
+int main(){
+    int arr[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int n = 10, i, p,data;
+    printf("Enter data you want to insert: "); scanf("%d",&data);
+    printf("Enter data desired data index: "); scanf("%d",&p);
+    printf("before array element--\n");
+    for (i = 0; i < n; i++){
+        printf("%d\t", arr[i]);
+    }
+    for (i = n; i >= data; i--){
+        arr[i + 1] = arr[i];
+    }
+    arr[p] = data;
+    n++;
+    printf("\nafter insertion array element are-- \n");
+    for (i = 0; i < n; i++){
+        printf("%d\t", arr[i]); 
+    }
+}  
+-----------------------------------------------------------------------------------------------------------------------------------------
 /* 
 #3. Algorithm for insert new element at given position
 Arr[] - array varible 
@@ -111,3 +114,4 @@ step 6 set arr[pos] = data
 step 7 set n = n + 1
 step 8 return
 */
+-----------------------------------------------------------------------------------------------------------------------------------------
