@@ -4,16 +4,27 @@ three ways to insertion in array:- 1) Insert in beginning
                                    3) insert new element at given position.
 1) Insert in beginning
 */
+-----------------------------------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+int main(){
+    int arr[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    int n = 10, i, data;
+    printf("\n array element--\n\n");
+    for (i = 0; i < n; i++){
+        printf("%d\t", arr[i]);
+    }
+    for (i = n; i >= 0; i--){
+        arr[i + 1] = arr[i];
+    }
+    arr[0] = data;
+    n++;
 
-
-
-
-
-
-
-
-
-
+    printf("\nafter insertion array element are-- \n\n");
+    for (i = 0; i < n; i++){
+        printf("%d\t", arr[i]);
+    }
+}
+-----------------------------------------------------------------------------------------------------------------------------------------
 /* 
 #1. Algorithm for array traversal 
 Arr[] - array varible 
