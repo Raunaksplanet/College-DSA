@@ -9,21 +9,20 @@ three ways to insertion in array:- 1) Insert in beginning
 #include <stdio.h>
 int main(){
     int arr[11] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int n = 10, i, data=58;
-    printf("array element--\n\n");
+    int n = 10, i;
+    printf("before array element--\n");
     for (i = 0; i < n; i++){
         printf("%d\t", arr[i]);
     }
-    for (i = n; i >= data; i--){
+    for (i = n; i >= 0; i--){
         arr[i + 1] = arr[i];
     }
-    
+    int data=5;
     arr[0] = data;
     n++;
-
-    printf("\nafter insertion array element are-- \n\n");
+    printf("\nafter insertion array element are-- \n");
     for (i = 0; i < n; i++){
-        printf("%d\t", arr[i]);
+        printf("%d\t", arr[i]); 
     }
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
