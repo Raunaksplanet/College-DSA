@@ -1,4 +1,4 @@
-// Search an element in Array.
+// #1 Search an element in Array.
 
 #include <stdio.h>
 int main(){
@@ -22,3 +22,20 @@ int main(){
         printf("\n\nData not found");
     }
 }
+-----------------------------------------------------------------------------------------------------------------------------------------
+/* 
+#1. Algorithm for search element in array 
+Arr[] - array varible 
+N - total number of element
+data - varible for search element
+
+step 1 Initialize counter(m) = 0, varible i = 0
+step 2 while(I<0) Repeat
+step 3 if(arr[i] == data) then print data found next counter++(m++)  
+step 4 end if
+step 5 set i = i + 1
+step 6 end while // Repeat until condition become false 
+step 7 if m==0 then print data not found 
+step 8 end if
+*/
+----------------------------------------------------------------------------------------------------------------------------------------- 
